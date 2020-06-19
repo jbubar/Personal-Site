@@ -1,2 +1,2 @@
 # Personal-Site
- Portfolio site! This is the place where I have all of my work and interests on display.
+ Portfolio site! My best attempt at putting 27 years of living on disply.
