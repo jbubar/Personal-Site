@@ -267,6 +267,14 @@ body .about {
   justify-content: center;
   align-items: center;
 }
+body .about img {
+  max-width: 80%;
+}
+@media (max-width: 900px) {
+  body .about img {
+    max-width: 50%;
+  }
+}
 body .about .text-container {
   display: flex;
   flex-direction: column;
