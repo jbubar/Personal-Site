@@ -1,0 +1,34 @@
+name: Update GitHub data
+
+# Run this action every day at 3am Pacific (11 am UTC)
+on:
+  schedule:
+    - cron: '0 11 * * *'
+
+jobs:
+  github_data:
+    runs-on: ubuntu-latest
+	steps:
+	  - shell: bash
+		env:
+			API_KEY: ${{ secrets.SHEETS_API_KEY }}
+		run: |
+			curl "https://sheets.googleapis.com/v4/spreadsheets/1tj6eQlVLFgmskoXouVt87POxYVwR1yWT2vOSQEPyDtg/values/Responses?key=$API_KEY"
+    # - uses: actions/checkout@v2
+    # - uses: bahmutov/npm-install@v1
+    #   with:
+    #     working-directory: github-actions
+    # - name: Generate github-data.json
+    #   id: json
+    #   uses: ./github-actions
+    #   with:
+    #     token: ${{ secrets.SHEETS_API_KEY }}
+    # - uses: stefanzweifel/git-auto-commit-action@v3.0.0
+    #   with:
+    #     # Optional glob pattern of files which should be added to the commit
+    #     file_pattern: _data/wins-data.json
+
+    #     commit_message: Update contributor and language data
+
+    #     # Commit author settings
+    #     commit_author: GitHub Actions Bot <hackforla-bot@hackforla.org>
