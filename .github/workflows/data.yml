@@ -8,4 +8,4 @@ jobs:
     - name: curl
       uses: enflo/curl-action@master
       with:
-        curl: "https://sheets.googleapis.com/v4/spreadsheets/1tj6eQlVLFgmskoXouVt87POxYVwR1yWT2vOSQEPyDtg/values/Responses?key=AIzaSyBoxkYpxtcUk6b3wiZQ62N17x_C3s0BTKU" -o wins.json
+        curl: curl "https://sheets.googleapis.com/v4/spreadsheets/1tj6eQlVLFgmskoXouVt87POxYVwR1yWT2vOSQEPyDtg/values/Responses?key=AIzaSyBoxkYpxtcUk6b3wiZQ62N17x_C3s0BTKU" -o wins.json
