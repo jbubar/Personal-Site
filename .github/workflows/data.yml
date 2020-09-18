@@ -1,11 +1,9 @@
-name: CURL CLI ACTION
 on: push
 jobs:
   curl:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
     - name: curl
-      uses: enflo/curl-action@master
+      uses: wei/curl@master
       with:
-        curl: curl "https://sheets.googleapis.com/v4/spreadsheets/1tj6eQlVLFgmskoXouVt87POxYVwR1yWT2vOSQEPyDtg/values/Responses?key=AIzaSyBoxkYpxtcUk6b3wiZQ62N17x_C3s0BTKU" -o wins.json
+        args: "https://sheets.googleapis.com/v4/spreadsheets/1tj6eQlVLFgmskoXouVt87POxYVwR1yWT2vOSQEPyDtg/values/Responses?key=AIzaSyBoxkYpxtcUk6b3wiZQ62N17x_C3s0BTKU" -o wins.json
