@@ -6,4 +6,4 @@ jobs:
     - name: curl
       uses: wei/curl@master
       with:
-        args: "https://sheets.googleapis.com/v4/spreadsheets/1tj6eQlVLFgmskoXouVt87POxYVwR1yWT2vOSQEPyDtg/values/Responses?key=AIzaSyBoxkYpxtcUk6b3wiZQ62N17x_C3s0BTKU" -o wins.json
+        args: https://sheets.googleapis.com/v4/spreadsheets/1tj6eQlVLFgmskoXouVt87POxYVwR1yWT2vOSQEPyDtg/values/Responses?key=AIzaSyBoxkYpxtcUk6b3wiZQ62N17x_C3s0BTKU -o wins.json
